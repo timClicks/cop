@@ -63,6 +63,16 @@
      basically because there's very little
      about Monty Python at python.org.
 
+     /non-linear pipelines/
+     Sometimes, a linear pathway isn't enough.
+     Perhaps we would like to do something
+     with intermediate results.
+
+     Enter `cop.flow`. It provides `broadcast`
+     for sending data to multiple steps, and
+     `loadbalance`, which implements a round-
+     robin load balancing system between steps.
+
 
 ==>  BACK STORY
      The start of this whole thing is from 
@@ -78,14 +88,20 @@
      function.
 
 
+==>  FUTURE PLANS
+     I would really like to see interacting
+     with multiple cores and hosts become
+     trivally easy. 
+
+
 ==>  HACKING
      If you would like to contribute to cop, 
      that's great. It's easy to do and will
-     help people.
+     help people. At the moment, test 
+     coverage is at a healthy 0%.
 
-     At the moment, the plan is to use heavy
-     use of doctests. Use `cop.printer` to 
-     get the result:
+     The plan is to use heavy use of doctests. 
+     `cop.printer` should be quite useful:
 
         >> source(sink(printer())) 
         result
