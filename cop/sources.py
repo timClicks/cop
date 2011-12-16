@@ -5,7 +5,7 @@ import codecs
 import time
 import requests
 
-from .util import coroutine
+from .utils import coroutine
 
 def entropy(target, length=1024):
     with open('/dev/urandom') as f:
