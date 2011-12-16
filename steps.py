@@ -34,10 +34,3 @@ def transform(fun, target):
         item = (yield)
         target.send(fun(item))
 
-# FLOW
-
-@coroutine
-def broadcast(*targets):
-    while 1:
-        data = (yield)
-        (t.send(data) for t in targets)
