@@ -40,26 +40,27 @@
      Using cop is straight forward. Examples
      generally follow the following pattern:
 
-       from cop.sources import source
-       from cop.steps import step1, step2
-       from cop.sinks import sink
+       >> from cop.sources import source
+       >> from cop.steps import step1, step2
+       >> from cop.sinks import sink
  
-       source(step1(step2(sink()))))
+       >> source(step1(step2(sink()))))
 
      /examples/
 
-       >>> from cop.sources import web
-       >>> from cop.steps import delimit 
-       >>> from cop.stops import grep
-       >>> from cop.steps import transform
-       >>> from cop.sinks import printer
+       >> from cop.sources import web
+       >> from cop.steps import delimit 
+       >> from cop.stops import grep
+       >> from cop.steps import transform
+       >> from cop.sinks import printer
 
-       >>> url = 'http://python.org'
-       >>> web(url,
-       ...    delimit('\n',
-       ...    transform(lambda l: l.lower(),
-       ...    grep('monty', 
-       ...    printer())))
+       >> url = 'http://python.org'
+       >> web(url, 
+       ...   delimit("\n",
+       ...   transform(lambda l: l.lower(), 
+       ...   grep('monty', 
+       ...   printer()))))
+       <BLANKLINE>
        
      In this case, nothing comes out. That's
      basically because there's very little
