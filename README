@@ -155,7 +155,16 @@
      [sidenote]
      No, we can't opt out of these provisions.
      Irrespective of the terms of the licence. 
-     
+
+==>  FURTHER READING
+
+     "Structure and Interpretation of Computer Programs"*
+     Chaper 5: Sequences and Coroutines (esp. 5.3 "Coroutines")
+
+     http://wla.berkeley.edu/~cs61a/fa11/lectures/streams.html
+
+     This is not the original SICP, written in Scheme, but
+     a version which is Python specific.
 
 ==>  REFERENCES
 
