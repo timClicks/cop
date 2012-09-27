@@ -154,6 +154,9 @@
      [4] http://www.consumer.org.nz/reports/consumer-guarantees-act/the-guarantees
 """
 
+__version__ = "0.2"
+__author__ = "Tim McNamara"
+
 def coroutine(func):
     def start(*args,**kwargs):
         cr = func(*args,**kwargs)
